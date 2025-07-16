@@ -160,3 +160,29 @@ footer {
   font-size: 0.9em;
   color: #666;
 }
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatIn 0.4s ease-in-out;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Optional animation */
+@keyframes floatIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

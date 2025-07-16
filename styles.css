@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,6 +7,36 @@ body {
   color: #333;
 }
 
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
   background-color: #ffd54f;
   padding: 60px 20px;
@@ -32,6 +64,7 @@ body {
   text-decoration: none;
 }
 
+/* Product Section */
 .products {
   padding: 40px 20px;
   text-align: center;
@@ -69,8 +102,40 @@ body {
   font-size: 1.2em;
 }
 
-footer {
+.order-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* About Section */
+.about {
   background: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #eee;
   text-align: center;
   padding: 20px;
   font-size: 0.9em;

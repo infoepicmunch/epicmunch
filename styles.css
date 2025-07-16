@@ -29,11 +29,14 @@ body {
   margin-left: 20px;
   color: white;
   text-decoration: none;
-  font-size: 0.95em;
+  font-size: 1em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
 }
 
 .navbar nav a:hover {
-  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Hero Section */
@@ -62,6 +65,11 @@ body {
   border-radius: 8px;
   font-size: 1em;
   text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #256228;
 }
 
 /* Product Section */
@@ -73,7 +81,7 @@ body {
 .products h2 {
   font-size: 2em;
   margin-bottom: 30px;
-  color: #444;
+  color: #2e7d32;
 }
 
 .product-grid {
@@ -90,6 +98,11 @@ body {
   padding: 20px;
   width: 250px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card img {
@@ -111,25 +124,31 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.order-button:hover {
+  background: #256228;
 }
 
 /* About Section */
 .about {
   background: #f4f4f4;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .about h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #2e7d32;
 }
 
 .about p {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  font-size: 1em;
+  font-size: 1.05em;
   color: #555;
 }
 

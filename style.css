@@ -1,44 +1,46 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #fffdf8;
+  background-color: #fffef9;
   color: #333;
 }
 
 .hero {
-  background: url('images/banner.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 100px 20px;
+  background-color: #ffd54f;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 3em;
   margin: 0;
+  color: #2e7d32;
 }
 
-.hero-content p {
-  font-size: 1.3em;
+.hero p {
+  font-size: 1.2em;
   margin: 10px 0 20px;
 }
 
-.cta {
-  background-color: #e58e26;
+.cta-button {
+  background: #2e7d32;
   color: white;
-  padding: 14px 28px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
   font-size: 1em;
   text-decoration: none;
-  border-radius: 6px;
 }
 
 .products {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .products h2 {
   font-size: 2em;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  color: #444;
 }
 
 .product-grid {
@@ -49,23 +51,28 @@ body {
 }
 
 .product-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 280px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
   padding: 20px;
-  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .product-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
 }
 
 footer {
-  background: #222;
-  color: #ccc;
+  background: #f4f4f4;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
 }

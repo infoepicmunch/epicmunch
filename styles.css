@@ -393,3 +393,50 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.2px;
 }
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.follow-us-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fffef5;
+}
+
+.follow-us-section h2 {
+  font-size: 1.8em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.follow-icons a {
+  margin: 0 20px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.follow-icons img {
+  width: 80px;
+  height: 80px;
+}
+
+.follow-icons a:hover img {
+  transform: scale(1.15);
+}

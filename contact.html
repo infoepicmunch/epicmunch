@@ -1,4 +1,3 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,29 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Epic Munch</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Navbar */
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .contact-left,
+    .contact-right {
+      flex: 1 1 45%;
+      padding: 20px;
+    }
+    .contact-logo-large {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+    .contact-right h2 {
+      margin-bottom: 10px;
+    }
+    .contact-right p {
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .contact-left,
+      .contact-right {
+        flex: 1 1 100%;
+      }
+      nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="navbar">
-       <div class="logo">Epic Munch Foods Pvt Ltd</div>
-       <nav>
-          <a href="index.html">Home</a>
-          <a href="index.html#about">About</a>
-          <a href="index.html#products">Products</a>
-          <a href="https://wa.me/919895474717" target="_blank">Order</a>
-           <a href="contact.html">Contact Us</a>
-       </nav>
-    </header>
-  <main>
-    <section class="contact-info">
-      <h2>We're Here to Help!</h2>
-      <p><strong>Address:</strong><br>
-        Epic Munch Foods<br>
-        Ground Floor 44/588, Kozhikode North,<br>
-        Kozhikode, Kerala - 673655, India</p>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo_new.png" alt="Epic Munch Logo" class="logo-img" />
+      <span class="logo-text">Epic Munch Foods Pvt Ltd</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#products">Products</a>
+      <a href="https://wa.me/919895474717" target="_blank">Order</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-      <p><strong>Phone:</strong> <a href="tel:+919895474717">+91 9895474717</a></p>
-      <p><strong>Email:</strong> <a href="mailto:infoepicmunch@gmail.com">infoepicmunch@gmail.com</a></p>
-      <p><strong>Website:</strong> <a href="https://www.epicmunch.in">www.epicmunch.in</a></p>
+  <main>
+    <section class="contact-section">
+      <div class="contact-left">
+        <img src="images/logo_new.png" alt="Epic Munch Logo" class="contact-logo-large" />
+      </div>
+      <div class="contact-right">
+        <h2>We're Here to Help!</h2>
+        <p><strong>Address:</strong><br>
+          Epic Munch Foods<br>
+          Ground Floor 44/588, Kozhikode North,<br>
+          Kozhikode, Kerala - 673655, India</p>
+
+        <p><strong>Phone:</strong> <a href="tel:+919895474717">+91 9895474717</a></p>
+        <p><strong>Email:</strong> <a href="mailto:infoepicmunch@gmail.com">infoepicmunch@gmail.com</a></p>
+        <p><strong>Website:</strong> <a href="https://www.epicmunch.in">www.epicmunch.in</a></p>
+      </div>
     </section>
   </main>
 

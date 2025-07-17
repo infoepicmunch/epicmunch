@@ -226,3 +226,83 @@ footer {
   50%  { opacity: 0.2; }
   100% { opacity: 1; }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px; /* or adjust to fit */
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Modern Contact Page Layout */
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 20px;
+  background-color: #fffef6;
+}
+
+.contact-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-logo img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  flex: 1;
+  background-color: #fdfdf6;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #007e33;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  color: #666;
+  font-size: 14px;
+}

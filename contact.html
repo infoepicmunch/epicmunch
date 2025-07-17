@@ -5,100 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Epic Munch</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Navbar */
-    .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2e7d32;
-  color: white;
-  padding: 12px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo-img {
-      height: 50px;
-      margin-right: 10px;
-    }
-    .logo-text {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #333;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    /* Contact Section */
-    .contact-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 30px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .contact-left,
-    .contact-right {
-      flex: 1 1 45%;
-      padding: 20px;
-    }
-    .contact-logo-large {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-    }
-    .contact-right h2 {
-      margin-bottom: 10px;
-    }
-    .contact-right p {
-      line-height: 1.6;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #f8f8f8;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9rem;
-      color: #555;
-      border-top: 1px solid #ddd;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .contact-section {
-        flex-direction: column;
-        text-align: center;
-      }
-      .contact-left,
-      .contact-right {
-        flex: 1 1 100%;
-      }
-      nav {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
-  </style>
+  <!-- Add inside <head> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+ 
 </head>
-<a href="https://wa.me/919895474717?text=Hi!%20I%20want%20to%20order%20Kerala%20Krunch%20banana%20chips!" 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Chat with us on WhatsApp">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-</a>
+
 <body>
+    <a href="https://wa.me/919895474717?text=Hi!%20I%20want%20to%20order%20Kerala%20Krunch%20banana%20chips!"
+         class="whatsapp-float"
+         target="_blank"
+         title="Chat with us on WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
   <header class="navbar">
     <div class="logo">
       <img src="images/logo_new.png" alt="Epic Munch Logo" class="logo-img" />
@@ -114,21 +32,24 @@
   </header>
 
   <main>
-    <section class="contact-section">
+    <section class="contact-container">
       <div class="contact-left">
         <img src="images/logo_new.png" alt="Epic Munch Logo" class="contact-logo-large" />
       </div>
-      <div class="contact-right">
-        <h2>We're Here to Help!</h2>
-        <p><strong>Address:</strong><br>
-          Epic Munch Foods<br>
-          Ground Floor 44/588, Kozhikode North,<br>
-          Kozhikode, Kerala - 673655, India</p>
-
-        <p><strong>Phone:</strong> <a href="tel:+919895474717">+91 9895474717</a></p>
-        <p><strong>Email:</strong> <a href="mailto:infoepicmunch@gmail.com">infoepicmunch@gmail.com</a></p>
-        <p><strong>Website:</strong> <a href="https://www.epicmunch.in">www.epicmunch.in</a></p>
-      </div>
+<div class="contact-right">
+  <h2>We're Here to Help!</h2>
+  <div class="address-card">
+    <h3><span style="vertical-align:middle;">📍</span> Our Address</h3>
+    <address>
+    Epic Munch Foods<br>
+    Ground Floor 44/588, Kozhikode North,<br>
+    Kozhikode, Kerala - 673655, India
+    </address>
+    <p><strong>📞 Phone:</strong> <a href="tel:+919895474717">+91 9895474717</a></p>
+    <p><strong>✉️ Email:</strong> <a href="mailto:infoepicmunch@gmail.com">infoepicmunch@gmail.com</a></p>
+    <p><strong>🌐 Website:</strong> <a href="https://www.epicmunch.in" target="_blank">www.epicmunch.in</a></p>
+  </div>
+</div>
     </section>
   </main>
 

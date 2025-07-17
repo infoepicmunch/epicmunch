@@ -204,3 +204,25 @@ footer {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+.blinking-banner {
+  background: linear-gradient(to right, #efc107, #fad103); /* Kerala Krunch warm yellow */
+  padding: 12px;
+  text-align: center;
+  border-top: 2px solid #e6bd2f;
+  border-bottom: 2px solid #e6bd2f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blinking-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c62828; /* red highlight */
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
